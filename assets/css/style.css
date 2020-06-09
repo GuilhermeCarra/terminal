@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+    font-family: 'Ubuntu Mono', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 14px; /*to be discussed*/
+    color: rgb(255, 255, 255);
+}
+.d-flex{
+    display: flex;
+}
+.background__container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(40, 40, 40, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.main__display{
+    height: 80vh;
+    width: 70vw;
+    background-color: rgb(40, 40, 60);
+    box-shadow: 3px 3px 5px rgb(73, 61, 61);
+    /* overflow-y: scroll; */
+    border-radius: 7px;
+    position: relative;
+}
+.main__display .display__show{
+    /* margin: 2px 4px; */
+    padding: 10px;
+}
+
+.display__show{
+    height: calc(100% - 25px);
+    overflow-y: scroll;
+}
+
+.main__display:focus{
+    outline: none;
+}
+
+.main__display__menu{
+    height: 25px;
+    width: 100%;
+    background-color: rgb(30, 30, 40);
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.main__display__menu span{
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.main__display__input{
+    display: flex;
+    align-items: center;
+}
+.main__display__input input{
+    width: 60%;
+    padding: 5px;
+    background: none;
+    color: white;
+    border: none;
+}
+
+
+
+/* SCROLL BAR STYLE*/
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(156, 152, 152, 0.5);
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+
+/* style help */
+
+.help {
+    padding-left: 10px;
+}
+
+.man-des, .man-des2{
+    width: 100%;
+    padding-left: 35px;
+}
+
+.man-des2 {
+    display:flex;
+    flex-direction: column;
+}
+
+.help-comnd{
+    font-weight: 500;
+    width: 20%;
+    margin-left: 35px;
+    display:inline-block;
+}
+
+
+.error{
+    color: red;
+}
+
+.title-man {
+    color: red;
+    font-weight: 700;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.synopsis-t{
+    color: red;
+    padding-left: 35px;
+    font-weight: 700;
+
+}
+
+.synopsis-s{
+    color: rgb(2, 230, 2);
+    font-weight: 700;
+}
+
+.margin-left{
+    margin-left:76px;
+}
+
+.sugestion-autocomplete {
+    display: block;
+}
+
+.autocomplete {
+    color: rgb(240, 240, 110);
+    margin: 0 20px;
+}
+
+.lsR-result {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.cat-content {
+    color: aqua;
+}
+
+.folder_title{
+    margin-top: 15px;
+}
+
+.lyrics__artist{
+    color: lightblue;
+    font-weight: 800;
+    margin: 5px 0 10px 0;
+}
+
+.lyrics__lyrics{
+    color: rgba(200, 200, 214, 0.9);
+    margin: 0 0 10px 10px;
+}
